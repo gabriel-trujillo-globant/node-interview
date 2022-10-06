@@ -8,4 +8,6 @@ console.log(b);
 var c = { prop1: 1, prop2: 2 };
 var d = c;
 c.prop1 = 'cat';
-console.log(d);
+console.log(d.prop1);
+
+// What's the expected output to the console?
