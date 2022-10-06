@@ -1,3 +1,11 @@
 // run `node index.js` in the terminal
 
-console.log(`Hello, Node.js v${process.versions.node}!`);
+var salary = '$1000';
+
+(function () {
+  console.log('Original salary was ' + salary);
+
+  var salary = '$5000';
+
+  console.log('My New Salary ' + salary);
+})();
