@@ -1,3 +1,8 @@
 // run `node index.js` in the terminal
 
-console.log(`Hello, Node.js v${process.versions.node}!`);
+(function() {
+  console.log(1); 
+  setTimeout(function(){console.log(2)}, 1000); 
+  setTimeout(function(){console.log(3)}, 0); 
+  console.log(4);
+})();
