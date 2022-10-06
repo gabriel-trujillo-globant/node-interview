@@ -1,3 +1,11 @@
 // run `node index.js` in the terminal
 
-console.log(`Hello, Node.js v${process.versions.node}!`);
+var a = 1;
+var b = a;
+a = 2;
+console.log(b);
+
+var c = { prop1: 1, prop2: 2 };
+var d = c;
+c.prop1 = 'cat';
+console.log(d);
